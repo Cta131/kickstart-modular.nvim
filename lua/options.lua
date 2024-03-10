@@ -7,7 +7,7 @@
 vim.opt.number = true
 -- You can also add relative line numbers, for help with jumping.
 --  Experiment for yourself to see if you like it!
--- vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
@@ -22,6 +22,16 @@ vim.opt.clipboard = 'unnamedplus'
 
 -- Enable break indent
 vim.opt.breakindent = true
+
+-- Disable default wrapping (position in line stay as is)
+vim.opt.wrap = false
+
+-- Handle Tab as blank space and set indenting to 4
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+
+vim.opt.virtualedit = 'block'
 
 -- Save undo history
 vim.opt.undofile = true
@@ -55,5 +65,6 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
+-- vim.opt.scrolloff = 999  -- would fix selected line in the middle of the editor (sucks with mouse)
 
 -- vim: ts=2 sts=2 sw=2 et
