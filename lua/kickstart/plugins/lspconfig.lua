@@ -11,6 +11,7 @@ return {
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
       { 'j-hui/fidget.nvim', opts = {} },
     },
+    lazy = false,
     config = function()
       -- Brief Aside: **What is LSP?**
       --
@@ -144,7 +145,7 @@ return {
         -- But for many setups, the LSP (`tsserver`) will work just fine
         -- tsserver = {},
         --
-
+        --delphi_ls = {},
         lua_ls = {
           -- cmd = {...},
           -- filetypes { ...},
